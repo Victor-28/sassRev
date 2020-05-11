@@ -1,0 +1,16 @@
+
+
+.myConcern {
+    border: 1px solid grey;
+}
+
+.myFear {
+    border: 2px solid blue;
+}
+.danger {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+    background-color: green;
+}

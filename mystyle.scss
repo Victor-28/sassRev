@@ -1,0 +1,27 @@
+
+//facts about this exercise is working with 3 files
+//mixin provide directive to reuse css code throughout a web page
+
+
+/* Define mixin with two arguments */
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+
+.myconcern {
+  @include bordered(grey, 1px);
+}
+
+.myFear {
+  @include bordered(blue, 2px);
+}
+
+.danger {
+  @include important-text;
+  background-color: rebeccapurple;
+}
+
+
+
+// using mixing with two value myArticle and myNotes
+//i wrote another line with class .danger in html and in css and scss
