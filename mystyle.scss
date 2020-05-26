@@ -1,16 +1,15 @@
 
-//facts about this exercise is working with 3 files
+
 //mixin provide directive to reuse css code throughout a web page
 
 
 $mycolor: #BBB584;
-$fonti-stack: Ariel,Helvetica, san serif;
+$font-stack: Ariel,Helvetica, sans serif;
 $primary-color: #2d946b
 $secondary-color: #c1cefa
 
-body{
-
-   background color: $mycolor;
+body {
+   background-color: $mycolor;
    font-family: $font-stack;
    line-height: 1.7;
  }
@@ -19,12 +18,35 @@ body{
   background-color: $primary-color;
   body: #f54000;
   height:500px;
+
+  nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+
+    ul{
+      display: flex;
+      list-style-type: none;
+
+    }
+      li{
+        padding: 15px;
+      }
+
+
+  }
+
 }
 
+a{
+  color: :#023984;
+}
 .container{
   max-width: 1000px;
   padding:0 30px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: auto;
 
 }
