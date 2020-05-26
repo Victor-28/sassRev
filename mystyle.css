@@ -1,16 +1,43 @@
 
 
-.myConcern {
-    border: 1px solid grey;
+body{
+
+    background color: brown
+    font-family: $font-stack;
+    line-height: 1.7;
 }
 
-.myFear {
-    border: 2px solid blue;
+.showcase{
+    background-color: $primary-color;
+    body: #f54000;
+    height:500px;
+
+     nav{
+
+    display: flex;
+         align-items: center;
+         justify-content: right;
+ul{
+    display: flex;
+    list-style-type: none;
 }
-.danger {
-    color: red;
-    font-size: 25px;
-    font-weight: bold;
-    border: 1px solid blue;
-    background-color: green;
+
+li{
+    padding: 15px;
 }
+
+     }
+}
+
+a{
+    color: :#023984;
+}
+
+.container{
+    max-width: 1000px;
+    padding:0 30px;
+    margin: 0 auto;
+    overflow: auto;
+
+}
+
