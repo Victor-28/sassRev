@@ -3,25 +3,28 @@
 //mixin provide directive to reuse css code throughout a web page
 
 
-/* Define mixin with two arguments */
-@mixin bordered($color, $width) {
-  border: $width solid $color;
+$mycolor: #BBB584;
+$fonti-stack: Ariel,Helvetica, san serif;
+$primary-color: #2d946b
+$secondary-color: #c1cefa
+
+body{
+
+   background color: $mycolor;
+   font-family: $font-stack;
+   line-height: 1.7;
+ }
+
+.showcase{
+  background-color: $primary-color;
+  body: #f54000;
+  height:500px;
 }
 
-.myconcern {
-  @include bordered(grey, 1px);
+.container{
+  max-width: 1000px;
+  padding:0 30px;
+  margin: 0 auto;
+  overflow: hidden;
+
 }
-
-.myFear {
-  @include bordered(blue, 2px);
-}
-
-.danger {
-  @include important-text;
-  background-color: rebeccapurple;
-}
-
-
-
-// using mixing with two value myArticle and myNotes
-//i wrote another line with class .danger in html and in css and scss
